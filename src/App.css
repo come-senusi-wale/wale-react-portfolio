@@ -1,38 +1,823 @@
-.App {
+
+/* styling nav bar */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: #fafaff;
+}
+
+#nav{
+  width: 100%;
+  background-color: #5361ff;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4000;
+ 
+}
+
+#nav #link{
+  display: none;
+}
+
+#nav #logo h2, #nav #toggle-icon h2{
+  text-transform: capitalize;
+  color: #fafaff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+#nav #toggle-icon h2{
+  cursor: pointer;
+}
+
+
+
+/* styling home :::::::::::: */
+
+#home{
+  padding: 0 20px;
+  padding-top: 130px;
+  background-color: #5361ff;
+  position: relative;
+}
+
+#home section #hello {
+  text-transform: uppercase;
+  color: #fafaff;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  
+ 
+}
+
+#home section #img {
+  padding: 0 20px;
+  text-align: right;
+  
+}
+
+#home section #img img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  
+}
+
+#home #side{
+  width: 200px;
+  height: 50px;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -50px;
+  bottom: 20%;
+  
+}
+
+#home #side a{
+  color: #fafaff;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+#home #side a .arror{
+  display: inline-block;
+  position: absolute;
+  left: -30%;
+  top: 15%;
+  
+}
+
+
+
+/* styling about >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#about{
+  text-align: center;
+  padding: 30px 20px;
+  
+}
+
+#about .about-title{
+  margin-bottom: 40px;
+}
+
+#about .about-title h2{
+  color: #2a3b47;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  position: relative;
+  
+}
+
+#about .about-title h2::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: #5361ff;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+
+#about div #about-img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+#about div #about-decription {
+  margin: 40px 0;
+}
+
+#about div #about-decription h3{
+  color: #5361ff;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  
+}
+
+#about div #about-decription p{
+  color: #697477;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+#about div #about-text{
+  margin-bottom: 30px;
+}
+ 
+#about div #about-text p{
+  color: #697477;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#about div #about-icon a{
+  color: #697477;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+#about div #about-icon a:hover{
+  color: #5361ff;
+}
+
+
+
+
+/* styling skills :::::::::::::::*/
+
+#skill{
+  padding: 40px 20px;
+  
+}
+
+#skill #skill-title{
+  text-align: center;
+  margin: 50px 0;
+}
+
+#skill #skill-title h2{
+  color: #2a3b47;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: relative;
+}
+
+#skill #skill-title h2::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: #5361ff;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#skill-flex #skill-container{
+  margin: 80px 0;
+}
+
+#skill-flex #skill-container #skill-dev{
+  margin-bottom: 80px;
+}
+
+#skill-flex #skill-container #skill-dev h2, #skill-flex #skill-container #skill-block h2{
+  color: #5361ff;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+#skill-flex #skill-container #skill-dev div, #skill-flex #skill-container #skill-block div{
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+  padding-left: 20px;
+}
+
+#skill-flex #skill-container #skill-dev div p, #skill-flex #skill-container #skill-block div p{
+  color: #697477;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+
+}
+
+#skill-flex #skill-container #skill-dev div p span, #skill-flex #skill-container #skill-block div p span{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#skill-flex #skill-container #skill-dev div p span:hover, #skill-flex #skill-container #skill-block div p span:hover{
+  background-color: #5361ff;
+  color: #fafaff;
+}
+
+#skill-img{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#skill-img img{
+  width: 200px;
+  height: 200px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+/* styling portfolio ::::::::::::::::::: */
+
+#portfolio{
+  padding: 40px 20px;
+}
+
+#portfolio-title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#portfolio-title h2{
+  color: #2a3b47;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: relative;
+}
+
+#portfolio-title h2::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: #5361ff;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.portfolio-container{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 40px 0;
+}
+
+.portfolio-container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.portfolio-container .portfolio-detail{
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  display: grid;
+  justify-content: space-around;
+  align-content: space-around;
+  border-radius: 10px;
+  z-index: 2000;
+  position: absolute;
+  background-color: #fafaff;
+  opacity: 0.6;
+  transition: all ease 500ms;
+}
+
+.portfolio-container .portfolio-detail a{
+  color: #2a3b47;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.portfolio-container:hover .portfolio-detail{
+  height: 100%;
+}
+
+
+/* styling contact :::::::::::::*/
+
+#contact{
+  padding: 60px 20px;
+  
+}
+
+#contact-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact-title h2{
+  color: #2a3b47;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+}
+
+#contact-title h2::after{
+  content: '';
+  width: 40px;
+  height: 3px;
+  background-color: #5361ff;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%);
+}
+
+#contact-info .info{
+  margin-bottom: 40px;
+}
+
+#contact-info .info h3{
+  color: #5361ff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: sans-serif;
+  
+}
+
+#contact-info .info p{
+  color: #697477;
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.msg .name{
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+  
+}
+
+.msg .name div{
+  width: 48%;
+}
+
+.msg .name input{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #2a3b47;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.msg .name input:focus, textarea{
+  outline: none;
+}
+
+textarea{
+  width: 100%;
+  border: 3px solid #2a3b47;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#submit{
+  float: right;
+  margin-top: 40px;
+}
+
+#submit button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #5361ff;
+  color: #fafaff;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all ease 500ms;
+}
+
+#submit button:hover{
+  opacity: 0.5;
+}
+
+
+
+/* styling footer ::::::::::::: */
+
+#footer{
+  padding: 60px 20px;
+  margin-top: 70px;
+  background-color: #2a3b47;
+}
+
+#footer div{
+  margin-bottom: 30px;
+}
+
+#footer-name h2, #footer-explore h2, #footer-follow h2{
+  color: #fafaff;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#footer-name p, #footer-explore ul li a, #footer-follow div a{
+  color: #697477;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+#footer-explore ul li{
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#footer-explore ul li a{
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all ease 500ms;
+}
+
+#footer-explore ul li a:hover{
+  color: #fafaff;
+  background-color: #5361ff;
+}
+
+#footer-follow div a{
+  margin: 0 10px;
+  font-size: 25px;
+  padding: 12px;
+  transition: all ease 500ms;
+  border-radius: 10px;
+}
+
+#footer-follow div a:hover{
+  color: #fafaff;
+  background-color: #5361ff;
+}
+
+
+
+/* styling side bar :::::::::: */
+
+#sidebar{
+  background-color: #fafaff;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 5000;
+  margin-left: 20%;
+  height: calc(100vh - 45px);
+  margin-top: 45px;
+  overflow: hidden;
+  transition: all ease 1000ms;
+}
+
+#sidebar div{
+  padding: 40px;
+}
+
+#sidebar ul li{
+  margin-bottom: 20px;
+}
+
+#sidebar ul li a{
+  color: #2a3b47;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  font-size: 17px;
+  opacity: 1;
+}
+
+#sidebar ul li:hover a::after{
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #5361ff;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+
+
+
+/* class added by react ::::::::::: */
+
+.show_sidebar{
+  width: 80%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transition: all ease 1000ms;
+}
+
+.two{
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+
+@media screen and (min-width: 768px) {
+  
+  /* styling links */
+
+  #nav{
+    padding: 20px 160px;
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #nav #link{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  #nav #link ul{
+    display: flex;
   }
+
+  #nav #link ul li{
+    margin-left: 20px;
+  }
+
+  #nav #link ul li a{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fafaff;
+    font-weight: 600;
+    position: relative;
+    transition: all ease 500ms;
+  }
+
+  #nav #link ul li:hover a::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #fafaff;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #nav #toggle-icon{
+    display: none;
+  }
+
+  .show-page{
+    position: relative;
+  }
+
+
+
+  .show-page::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fafaff;
+  }
+
+  /* styling home */
+
+  #home{
+    padding: 180px 160px;
+    padding-bottom: 200px;
+  }
+
+  #home section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #home section #hello {
+    font-size: 120px;
+  }
+  
+
+  #home section #img img{
+    width: 500px;
+    height: 500px;
+  }
+  
+  
+  #home #side a{ 
+    font-size: 30px; 
+    left: -10px;
+    bottom: -130px;
+    
+  }
+  
+ 
+
+
+
+  /* styling about :::::::::*/
+
+  #about{
+    padding: 40px 0;
+    padding-right: 160px;
+    text-align: left;
+    width: 100%;
+  }
+
+  #about .about-title{
+    text-align: center;
+  }
+
+  #about #about-flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    justify-content: space-between;
+    
+  }
+
+  #about #about-flex #about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  /* styling skill ::::::::: */
+
+  #skill{
+    padding: 40px 160px;
+  }
+
+  #skill #skill-title h2{
+    font-size: 35px;
+  }
+
+  #skill #skill-title h2::after{
+    top: 40px;
+    height: 5px;
+  }
+
+  #skill-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  #skill-img{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #skill-img img{
+    width: 400px;
+    height: 300px;
+  
+  }
+
+
+  /* styling portfolio :::::::::: */
+
+  #portfolio{
+    padding: 40px 160px;
+  }
+
+  #portfolio-title h2{
+    font-size: 35px;
+  }
+  
+  #portfolio-title h2::after{
+    top: 40px;
+    height: 5px;
+  }
+
+  #portfolio-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    justify-content: space-between;
+    grid-row-gap: 30px;
+  }
+
+  .portfolio-container{
+    width: 400px;
+    height: 300px;
+    margin: 0;
+  }
+
+  /* styling contact :::::::::: */
+
+  #contact{
+    padding: 40px 160px;
+  }
+
+  #contact-title h2{
+   font-size: 35px;
+  }
+  
+  #contact-title h2::after{
+    top: 40px;
+    height: 5px;
+  }
+
+  #contact-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+
+
+  /* styling footer */
+
+  #footer{
+    padding: 40px 160px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* styling side bar */
+
+  #sidebar{
+    display: none;
+  }
+
+ 
+
+ 
 }
